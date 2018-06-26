@@ -18,6 +18,8 @@ Person.prototype.calculateAge = function() {
 
 Person.prototype.lastName = 'Smith';
 
+Person.prototype.job = 'Mechanic';
+
 var john = new Person('John', 1990, 'teacher');
 var jane = new Person('Jane', 1969, 'designer');
 var mark = new Person('Mark', 1948, 'retired');
@@ -29,3 +31,5 @@ mark.calculateAge();
 console.log(john.lastName);
 console.log(jane.lastName);
 console.log(mark.lastName);
+console.log(mark.job);
+console.log(john.job);
