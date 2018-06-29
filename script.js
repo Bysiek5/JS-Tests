@@ -368,7 +368,7 @@ console.log(fullJapan);
     questions[n].checkAnswer(answer);
 })();
 */
-
+/*
 (function() {
     function Question(question, answers, correct) {
         this.question = question;
@@ -446,3 +446,173 @@ console.log(fullJapan);
     nextQuestion();
     
 })();
+*/
+
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+// Operator precedence
+/*
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+var isFullAge = now - yearJohn >= fullAge;
+console.log(isFullAge);
+
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
+
+var x, y;
+x = (3 + 5) * 4 - 6; // 8 * 4 -6 = 32 - 6 = 26
+console.log(x);
+
+x *= 2;
+console.log(x);
+x += 20;
+console.log(x);
+x++;
+console.log(x);
+*/
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+// CHALLENGE 1
+/*
+var heightMark = 1.60;
+var massMark = 55;
+var heightJohn = 1.85;
+var massJohn = 110;
+
+var MarkBMI = massMark / (heightMark * heightMark)
+console.log(MarkBMI);
+
+var JohnBMI = massJohn / (heightJohn * heightJohn);
+console.log(JohnBMI);
+
+// Option first
+var johnHigherBMI = JohnBMI > MarkBMI;
+console.log(johnHigherBMI);
+
+// Option second
+var heigherBMI = function() {
+    if (MarkBMI > JohnBMI) {
+        console.log('Mark is fat');
+    } else {
+        console.log('John is fat');
+    }
+}
+
+heigherBMI();
+*/
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+// Boolean logic
+/*
+var firstName = 'John';
+var age = 20;
+
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) { // 13-20
+    console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');
+} else {
+    console.log(firstName + ' is a man.');
+}
+*/
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+// Truthy and Falsy values and equality operators
+// Falsy values: undefined, null, 0, '', Nan 
+// Truthy values: NOT falsy values
+/*
+var height;
+
+height = 0;
+
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+*/
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+// CHALLENGE 2
+/*
+var JTS1 = 89;
+var JTS2 = 120;
+var JTS3 = 103;
+
+var MTS1 = 116;
+var MTS2 = 94;
+var MTS3 = 123;
+
+var averageJohnTeam = (JTS1 + JTS2 + JTS3) / 3;
+console.log(averageJohnTeam); //104
+
+var averageMikeTeam = (MTS1 + MTS2 + MTS3) / 3;
+console.log(averageMikeTeam); //111
+
+if (averageJohnTeam > averageMikeTeam) {
+    console.log('John team win. They have ' + averageJohnTeam + ' points.');
+} else if (averageJohnTeam < averageMikeTeam) {
+    console.log('Mike team win. They have ' + averageMikeTeam + ' points.');
+} else {
+    console.log('Draw. They have ' + averageJohnTeam + ' points.');
+}*/
+/*
+if (averageJohnTeam > averageMikeTeam) {
+    console.log('John team is better. They have ' + averageJohnTeam + ' score.');
+} else if (averageJohnTeam = averageMikeTeam) {
+    console.log('Draw. They have both ' + averageJohnTeam + ' points.');
+} /*else if (averageJohnTeam < averageMikeTeam) {
+    console.log('Mike team is better. They have ' + averageMikeTeam + ' score.');
+}*/
+
+// CHALLENGE 2.5
+
+var JTS1 = 89;
+var JTS2 = 120;
+var JTS3 = 103;
+
+var MTS1 = 116;
+var MTS2 = 94;
+var MTS3 = 123;
+
+var ETS1 = 97;
+var ETS2 = 134;
+var ETS3 = 105;
+
+var averageJohnTeam = (JTS1 + JTS2 + JTS3) / 3;
+console.log(averageJohnTeam); //104
+
+var averageMikeTeam = (MTS1 + MTS2 + MTS3) / 3;
+console.log(averageMikeTeam); //111
+
+var averageEvaTeam = (ETS1 + ETS2 + ETS3) / 3;
+console.log(averageEvaTeam); //112
+
+if (averageJohnTeam > averageMikeTeam && averageJohnTeam > averageEvaTeam) {
+    console.log('John team win. They have ' + averageJohnTeam + ' points.');
+} else if (averageJohnTeam < averageMikeTeam && averageMikeTeam > averageEvaTeam) {
+    console.log('Mike team win. They have ' + averageMikeTeam + ' points.');
+} else if (averageEvaTeam > averageJohnTeam && averageEvaTeam > averageMikeTeam) {
+    console.log('Eva team win. They have ' + averageEvaTeam + ' points.');
+} else if (averageEvaTeam === averageJohnTeam && averageJohnTeam === averageMikeTeam) {
+    console.log('Draw.');
+} else {
+    console.log('Something other.');
+}
+
+
+
+
+
+
+
+
+
